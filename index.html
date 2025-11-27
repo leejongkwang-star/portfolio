@@ -38,15 +38,92 @@
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <div class="hero-text" style="text-align: center; width: 100%;">
+            <div class="hero-text">
                 <h1 class="hero-title">
                     <span class="greeting">안녕하세요,</span>
-                    <span class="name">저는 <span class="highlight">금융 IT Master 이종광광</span>입니다</span>
+                    <span class="name"><span class="highlight">금융 IT Master 이종광</span>입니다</span>
                 </h1>
                 <p class="hero-description">
                     여신·수신·어음관리를 넘어 신용카드 시스템까지 섭렵한<br>
                     <strong>23년 경력의 금융 IT 전문가</strong>
                 </p>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-placeholder">
+                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 배경 원형 패턴 -->
+                        <circle cx="250" cy="250" r="200" fill="none" stroke="currentColor" stroke-width="2" opacity="0.15"/>
+                        <circle cx="250" cy="250" r="150" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.1"/>
+                        
+                        <!-- 금융 차트 - 상승 그래프 -->
+                        <g opacity="0.7">
+                            <path d="M 100 350 L 130 320 L 160 300 L 190 280 L 220 260 L 250 240 L 280 220 L 310 200 L 340 180" 
+                                  stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="100" cy="350" r="5" fill="currentColor"/>
+                            <circle cx="340" cy="180" r="5" fill="currentColor"/>
+                            
+                            <!-- 차트 영역 그라데이션 -->
+                            <defs>
+                                <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:currentColor;stop-opacity:0.2" />
+                                    <stop offset="100%" style="stop-color:currentColor;stop-opacity:0.05" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M 100 350 L 130 320 L 160 300 L 190 280 L 220 260 L 250 240 L 280 220 L 310 200 L 340 180 L 340 350 L 100 350 Z" 
+                                  fill="url(#chartGradient)"/>
+                        </g>
+                        
+                        <!-- 데이터 포인트 -->
+                        <g opacity="0.6">
+                            <circle cx="160" cy="300" r="4" fill="currentColor"/>
+                            <circle cx="220" cy="260" r="4" fill="currentColor"/>
+                            <circle cx="280" cy="220" r="4" fill="currentColor"/>
+                        </g>
+                        
+                        <!-- 금융 아이콘 - 화폐/원화 -->
+                        <g opacity="0.5">
+                            <circle cx="150" cy="150" r="40" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                            <text x="150" y="165" text-anchor="middle" font-size="32" font-weight="bold" fill="currentColor">₩</text>
+                        </g>
+                        
+                        <!-- IT/서버 아이콘 -->
+                        <g opacity="0.5">
+                            <rect x="310" y="310" width="55" height="45" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                            <line x1="320" y1="325" x2="360" y2="325" stroke="currentColor" stroke-width="2"/>
+                            <line x1="320" y1="335" x2="355" y2="335" stroke="currentColor" stroke-width="2"/>
+                            <line x1="320" y1="345" x2="365" y2="345" stroke="currentColor" stroke-width="2"/>
+                            
+                            <!-- 연결 노드 -->
+                            <circle cx="337" cy="300" r="4" fill="currentColor"/>
+                            <line x1="337" y1="300" x2="337" y2="310" stroke="currentColor" stroke-width="2.5"/>
+                        </g>
+                        
+                        <!-- 보안/신뢰 아이콘 - 방패 -->
+                        <g opacity="0.5">
+                            <path d="M 250 90 L 285 102 L 285 140 L 250 165 L 215 140 L 215 102 Z" 
+                                  fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                            <path d="M 250 105 L 270 114 L 270 135 L 250 155 L 230 135 L 230 114 Z" 
+                                  fill="currentColor" opacity="0.25"/>
+                        </g>
+                        
+                        <!-- 네트워크 연결 노드 -->
+                        <g opacity="0.4">
+                            <circle cx="110" cy="190" r="10" fill="currentColor"/>
+                            <circle cx="190" cy="170" r="10" fill="currentColor"/>
+                            <circle cx="300" cy="240" r="10" fill="currentColor"/>
+                            <circle cx="390" cy="210" r="10" fill="currentColor"/>
+                            
+                            <line x1="120" y1="190" x2="180" y2="170" stroke="currentColor" stroke-width="2"/>
+                            <line x1="200" y1="170" x2="290" y2="240" stroke="currentColor" stroke-width="2"/>
+                            <line x1="310" y1="240" x2="380" y2="210" stroke="currentColor" stroke-width="2"/>
+                        </g>
+                        
+                        <!-- 금융 데이터 흐름 -->
+                        <g opacity="0.3">
+                            <path d="M 120 250 Q 200 200 280 250" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                        </g>
+                    </svg>
+                </div>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -61,6 +138,55 @@
         <div class="container">
             <h2 class="section-title">핵심 역량 요약</h2>
             <div class="about-content">
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="stat-number">23</div>
+                        <div class="stat-label">년 경력</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                                <path d="M4 22h16"></path>
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">은행장 표창</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">총 수상 내역</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">시스템 안정성</div>
+                    </div>
+                </div>
                 <div class="about-text">
                     <p class="about-lead">
                         <strong>"여신·수신·어음관리를 넘어 신용카드 시스템까지 섭렵한 금융 IT Master"</strong>
