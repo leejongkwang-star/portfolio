@@ -125,18 +125,29 @@ body {
     display: none;
     flex-direction: column;
     gap: 5px;
-    background: none;
-    border: none;
+    background: rgba(15, 23, 42, 0.1);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px 12px;
+    transition: var(--transition);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mobile-menu-toggle:hover {
+    background: rgba(15, 23, 42, 0.15);
+    transform: scale(1.05);
 }
 
 .mobile-menu-toggle span {
-    width: 25px;
+    width: 28px;
     height: 3px;
-    background: var(--text-primary);
+    background: var(--primary-color);
     border-radius: 3px;
     transition: var(--transition);
+    display: block;
 }
 
 /* Hero Section */
@@ -880,6 +891,22 @@ body {
 @media (max-width: 768px) {
     .mobile-menu-toggle {
         display: flex;
+        background: rgba(15, 23, 42, 0.1);
+        border: 2px solid var(--primary-color);
+        border-radius: 8px;
+        padding: 10px 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-menu-toggle:hover {
+        background: rgba(15, 23, 42, 0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .mobile-menu-toggle span {
+        width: 28px;
+        height: 3.5px;
+        background: var(--primary-color);
     }
 
     .nav-menu {
@@ -1099,6 +1126,15 @@ body {
         padding: 0.75rem 15px;
     }
 
+    .mobile-menu-toggle {
+        padding: 8px 10px;
+    }
+
+    .mobile-menu-toggle span {
+        width: 24px;
+        height: 3px;
+    }
+
     .container {
         padding: 0 15px;
     }
@@ -1245,13 +1281,22 @@ body {
         }
 
         .mobile-menu-toggle {
-            background: transparent !important;
+            background: rgba(255, 255, 255, 0.2) !important;
+            border: 2px solid #ffffff !important;
+            border-radius: 8px !important;
+            padding: 10px 12px !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .mobile-menu-toggle:hover {
+            background: rgba(255, 255, 255, 0.3) !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
         }
 
         .mobile-menu-toggle span {
             background: #ffffff !important;
             width: 28px !important;
-            height: 3px !important;
+            height: 3.5px !important;
         }
 
         .nav-menu {
