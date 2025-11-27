@@ -1121,18 +1121,18 @@ body {
     /* 모바일 다크모드 - 헤더를 더 명확하게 */
     @media (max-width: 768px) {
         .navbar {
-            background: #ffffff !important;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4) !important;
-            backdrop-filter: none !important;
+            background: rgba(15, 23, 42, 0.95) !important;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5) !important;
+            backdrop-filter: blur(10px) !important;
         }
 
         .navbar.scrolled {
-            background: #ffffff !important;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+            background: rgba(15, 23, 42, 0.98) !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6) !important;
         }
 
         .logo a {
-            background: linear-gradient(135deg, #0f172a, #1e293b, #d4af37) !important;
+            background: linear-gradient(135deg, #ffffff, #f1f5f9, #d4af37) !important;
             -webkit-background-clip: text !important;
             -webkit-text-fill-color: transparent !important;
             background-clip: text !important;
@@ -1144,40 +1144,40 @@ body {
         }
 
         .mobile-menu-toggle span {
-            background: #0f172a !important;
+            background: #ffffff !important;
             width: 28px !important;
             height: 3px !important;
         }
 
         .nav-menu {
-            background: #ffffff !important;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+            background: rgba(15, 23, 42, 0.98) !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
         }
 
         .nav-menu .nav-link {
-            color: #0f172a !important;
+            color: #ffffff !important;
             font-weight: 600 !important;
             padding: 1rem 0;
             display: block;
         }
 
         .nav-menu .nav-link:hover {
-            color: #1e293b !important;
-            background: rgba(15, 23, 42, 0.05);
+            color: #d4af37 !important;
+            background: rgba(212, 175, 55, 0.1);
         }
 
         .nav-menu .nav-link.active {
-            color: #0f172a !important;
-            background: rgba(15, 23, 42, 0.1);
+            color: #d4af37 !important;
+            background: rgba(212, 175, 55, 0.15);
         }
 
         .nav-menu.active {
-            background: #ffffff !important;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+            background: rgba(15, 23, 42, 0.98) !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
         }
 
         .nav-menu.active .nav-link {
-            color: #0f172a !important;
+            color: #ffffff !important;
             font-weight: 600 !important;
         }
     }
