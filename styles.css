@@ -1067,14 +1067,39 @@ body {
         background: #0f172a;
     }
 
-    /* 모바일 메뉴가 열렸을 때 */
-    .nav-menu.active {
-        background: rgba(255, 255, 255, 0.98);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
+    /* 모바일 메뉴 스타일 - 다크모드에서도 명확하게 보이도록 */
+    @media (max-width: 768px) {
+        .nav-menu {
+            background: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+        }
 
-    .nav-menu.active .nav-link {
-        color: #0f172a;
+        .nav-menu .nav-link {
+            color: #0f172a !important;
+            font-weight: 600;
+            padding: 1rem 0;
+            display: block;
+        }
+
+        .nav-menu .nav-link:hover {
+            color: #1e293b !important;
+            background: rgba(15, 23, 42, 0.05);
+        }
+
+        .nav-menu .nav-link.active {
+            color: #0f172a !important;
+            background: rgba(15, 23, 42, 0.1);
+        }
+
+        .nav-menu.active {
+            background: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+        }
+
+        .nav-menu.active .nav-link {
+            color: #0f172a !important;
+            font-weight: 600;
+        }
     }
 }
 
