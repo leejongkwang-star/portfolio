@@ -1,119 +1,95 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IBK시스템 | 홈</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header" id="top">
-      <div class="brand">
-        <span class="brand-mark">IBK</span>
-        <div class="brand-text">
-          <strong>IBK시스템</strong>
-          <span>금융 IT 플랫폼 파트너</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="금융 IT 서비스 Master - IBK기업은행 23년 경력">
+    <title>금융 IT Master | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">금융 IT Master</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="메뉴 토글">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">About</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="awards.html" class="nav-link">Awards</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-      </div>
-      <button class="nav-toggle" aria-label="메뉴 열기">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+    </nav>
 
-    <main>
-      <section class="hero" id="about">
-        <div class="hero-overlay"></div>
+    <!-- 히어로 섹션 -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
         <div class="hero-content">
-          <p class="eyebrow">Since 1991</p>
-          <h1>
-            금융 IT 서비스의 Best Value를 만드는<br />
-            IBK시스템
-          </h1>
-          <p class="hero-body">
-            1991년 설립 이후 금융·공공 분야 핵심 시스템을 책임지며 2024년 기준
-            매출 3,510억 원, 683명의 전문가 조직으로 성장했습니다. (출처:
-            IBK시스템 공식 사이트)
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">사업 영역 보기</a>
-            <a class="btn ghost" href="#contact">문의하기</a>
-          </div>
+            <div class="hero-text" style="text-align: center; width: 100%;">
+                <h1 class="hero-title">
+                    <span class="greeting">안녕하세요,</span>
+                    <span class="name">저는 <span class="highlight">금융 IT Master 이종광광</span>입니다</span>
+                </h1>
+                <p class="hero-description">
+                    여신·수신·어음관리를 넘어 신용카드 시스템까지 섭렵한<br>
+                    <strong>23년 경력의 금융 IT 전문가</strong>
+                </p>
+            </div>
         </div>
-      </section>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
 
-      <section class="overview">
-        <div class="overview-card metrics-card">
-          <p class="eyebrow">Key Metrics</p>
-          <h2>IBK시스템, 숫자로 보는 성장</h2>
-          <div class="metrics-grid">
-            <div class="metric">
-              <div class="metric-circle metric-year" data-progress="0.85">
-                <div class="metric-inner">
-                  <span class="metric-value" data-target="1991">0</span>
-                  <span class="metric-unit">since</span>
+    <!-- About 섹션 (핵심 역량 요약) -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">핵심 역량 요약</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">
+                        <strong>"여신·수신·어음관리를 넘어 신용카드 시스템까지 섭렵한 금융 IT Master"</strong>
+                    </p>
+                    <p>
+                        2002년 입사 이래 약 <strong>23년간</strong> IBK기업은행의 핵심 IT 시스템 구축과 운영을 리딩해 왔습니다. 
+                        은행 계정계(Core Banking)의 근간인 여신, 수신, 어음관리 업무를 완벽히 수행했으며, 
+                        현재는 <strong>카드운영부 부장</strong>으로서 신용카드 업무 전반을 총괄하고 있습니다.
+                    </p>
+                    <p>
+                        C/PL1 기반의 대용량 레거시 처리 역량 위에 <strong>JAVA, Spring Framework</strong> 등 최신 웹 기술을 접목하여 
+                        시스템 현대화를 주도해 왔으며, 이러한 성과를 인정받아 총 <strong>2회의 은행장 표창</strong>을 수상했습니다.
+                    </p>
+                    <p>
+                        은행(Banking)과 카드(Card) 비즈니스를 모두 아우르는 폭넓은 도메인 지식과 기술 리더십으로 
+                        비즈니스 목표 달성에 기여합니다.
+                    </p>
                 </div>
-              </div>
-              <p class="metric-label">설립 연도</p>
             </div>
-            <div class="metric">
-              <div class="metric-circle metric-revenue" data-progress="0.78">
-                <div class="metric-inner">
-                  <span class="metric-value" data-target="3510">0</span>
-                  <span class="metric-unit">억 매출</span>
-                </div>
-              </div>
-              <p class="metric-label">2024년 매출</p>
-            </div>
-            <div class="metric">
-              <div class="metric-circle metric-people" data-progress="0.65">
-                <div class="metric-inner">
-                  <span class="metric-value" data-target="683">0</span>
-                  <span class="metric-unit">명</span>
-                </div>
-              </div>
-              <p class="metric-label">임직원 수</p>
-            </div>
-          </div>
-          <div class="hero-actions">
-            <a class="btn primary" href="projects.html">프로젝트 보기</a>
-            <a class="btn ghost" href="contact.html">협업 문의</a>
-          </div>
         </div>
-        <div class="overview-card">
-          <p class="eyebrow">Capabilities</p>
-          <h3>플랫폼 · AI/AML · 클라우드까지</h3>
-          <p>
-            모바일·쇼핑 플랫폼 구축, AI 기반 자금세탁방지, Hybrid/Multi-Cloud
-            전환 및 전자구매(EPRO) 운영 경험을 기반으로 금융권 DX를 돕습니다.
-          </p>
-          <ul class="capability-list">
-            <li>iOS/Android, 하이브리드 앱 &amp; 모바일 보안</li>
-            <li>AI·머신러닝 기반 이상거래 탐지 및 AML 고도화</li>
-            <li>클라우드 컨설팅·마이그레이션·EPRO 운영</li>
-          </ul>
-        </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="site-footer">
-      <p>© <span id="current-year"></span> IBK시스템. All rights reserved.</p>
-      <div class="socials">
-        <a href="https://www.ibksystem.co.kr" target="_blank" rel="noreferrer">공식 사이트</a>
-        <a href="http://epro.ibksystem.co.kr" target="_blank" rel="noreferrer">EPRO</a>
-        <a href="mailto:hello@example.com">대표 이메일</a>
-      </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 금융 IT Master. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="script.js" defer></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
-
